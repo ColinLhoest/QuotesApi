@@ -29,10 +29,13 @@ Pour installer le projet, suivez ces étapes :
 
 ## Utilisation
 Pour appeler l'API déployée localement, lancez une requête à l'adresse suivante :
-   ```bash
-   http://localhost:3000/api/quotes/random
+```
+http://localhost:3000/api/quotes/random
+```
 
-Le paramètre limit est optionnel et permet d'accéder à un nombre spécifié de citations aléatoires. Par exemple :
-   ```bash
-   http://localhost:3000/api/quotes/random/3
+Le paramètre `limit` est optionnel et permet d'accéder à un nombre spécifié de citations aléatoires. Par exemple :
+```
+http://localhost:3000/api/quotes/random/3
+```
 récupérera 3 citations aléatoires.
+
