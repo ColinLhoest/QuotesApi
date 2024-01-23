@@ -28,11 +28,9 @@ class ApiDataAccess implements DataAccess {
             params: params,
             data: data
         }
-        console.log(config)
+        
         const response = await axios(config)
         
-        console.log('resssponse')
-        console.log(response)
         return response.data
     }
 }
