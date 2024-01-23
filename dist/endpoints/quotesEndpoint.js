@@ -18,15 +18,16 @@ const quotesService_1 = require("../services/quotesService");
 /**
  *
  */
-router_1.default.get('/quotes/random/:limit?', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router_1.default.get('/quotes/:limit?', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
     console.log('mtn');
     try {
-        const limit = req.params.limit;
-        const quotes = yield quotesService_1.quotesService.getRamdomQuoteAsync(req.url, limit);
+        const limit = (_a = req.params.limit) !== null && _a !== void 0 ? _a : 1;
+        const response = yield quotesService_1.quotesService.getRamdomQuoteAsync(req.url, { limit: limit });
+        const quotes = response.map((quote) => quote["content"]);
         res.send(quotes);
     }
     catch (error) {
-        console.log(error);
         throw new backEndException_1.BackEndException('Access Denied');
     }
 }));

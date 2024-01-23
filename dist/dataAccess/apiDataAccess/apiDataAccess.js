@@ -45,7 +45,10 @@ class ApiDataAccess {
                 params: params,
                 data: data
             };
+            console.log(config);
             const response = yield (0, axios_1.default)(config);
+            console.log('resssponse');
+            console.log(response);
             return response.data;
         });
     }

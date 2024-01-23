@@ -14,7 +14,7 @@ const service_1 = require("./service");
 class QuotesService extends service_1.Service {
     getRamdomQuoteAsync(uri, params) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.dataAccess.getAsync(uri, params);
+            return yield this.dataAccess.getAsync('quotes/random', params);
         });
     }
 }
