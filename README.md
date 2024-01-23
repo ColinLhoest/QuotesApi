@@ -30,12 +30,12 @@ Pour installer le projet, suivez ces étapes :
 ## Utilisation
 Pour appeler l'API déployée localement, lancez une requête à l'adresse suivante :
 ```
-http://localhost:3030/api/quotes/random
+http://localhost:3030/api/quotes
 ```
 
 Le paramètre `limit` est optionnel et permet d'accéder à un nombre spécifié de citations aléatoires. Par exemple :
 ```
-http://localhost:3030/api/quotes/random/3
+http://localhost:3030/api/quotes/3
 ```
 récupérera 3 citations aléatoires.
 
