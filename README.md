@@ -1,7 +1,7 @@
 # Quotes API
 
 ## Description
-Quotes API est une application Node.js qui fournit une API pour récupérer des citations aléatoires. L'application utilise Express.js et est écrite en TypeScript. Elle comprend une interface utilisateur frontale simple pour afficher les citations et un bouton "Next" pour charger une nouvelle citation.
+Quotes API est une application Node.js qui fournit une API pour récupérer des citations aléatoires. L'application utilise Express.js et est écrite en TypeScript. Elle comprend une interface utilisateur frontale simple qui afffichent un nombre déterminé de citations aléatoire.
 
 ## Prérequis
 - Node.js
@@ -28,11 +28,11 @@ Pour installer le projet, suivez ces étapes :
    npm run start
 
 ## Utilisation
-Appeler l'api déployée localement en lançant une requete à l'adresse suivante :
+Pour appeler l'API déployée localement, lancez une requête à l'adresse suivante :
    ```bash
    http://localhost:3000/api/quotes/random/
 
-Le paramètre limite est optionnel et permet d'accéder à X citations aléatoire:
+Le paramètre limit est optionnel et permet d'accéder à un nombre spécifié de citations aléatoires. Par exemple :
    ```bash
    http://localhost:3000/api/quotes/random/3
 récupérera 3 citations aléatoires.
