@@ -11,7 +11,7 @@ Quotes API est une application Node.js qui fournit une API pour récupérer des 
 ## Installation
 Pour installer le projet, suivez ces étapes :
 
-1. Clonez le dépôt :
+1. Clonez le dépôt et checkout sur la branche master :
    ```bash
    git clone https://github.com/username/QuotesApi.git
 
