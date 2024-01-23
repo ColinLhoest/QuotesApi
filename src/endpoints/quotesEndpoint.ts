@@ -12,8 +12,7 @@ router.get('/quotes/:limit?', async (req: Request, res: Response) => {
     try {
         const limit = req.params.limit ?? 1
         
-        const response: any = await quotesService.getRamdomQuoteAsync(req.url, {limit: limit })
-        const quotes: string[] = response.map((quote: any) => quote["content"])
+        const quotes: string = await quotesService.getRamdomQuoteAsync(req.url, {limit: limit })
 
         res.send(quotes)
     } catch (error) {
