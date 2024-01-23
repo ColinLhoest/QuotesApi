@@ -14,3 +14,25 @@ Pour installer le projet, suivez ces étapes :
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/username/QuotesApi.git
+
+2. Installez les modules :
+   ```bash
+   npm i
+
+3. Compilez la solution :
+   ```bash
+   npm run rebuild
+
+4. Démarrez le serveur local :
+   ```bash
+   npm run start
+
+## Utilisation
+Appeler l'api déployée localement en lançant une requete à l'adresse suivante :
+   ```bash
+   http://localhost:3000/api/quotes/random/
+
+Le paramètre limite est optionnel et permet d'accéder à X citations aléatoire:
+   ```bash
+   http://localhost:3000/api/quotes/random/3
+récupérera 3 citations aléatoires.
