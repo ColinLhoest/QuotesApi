@@ -1,0 +1,1 @@
+export const URI_API_BASE : string = "https://api.quotable.io/"
