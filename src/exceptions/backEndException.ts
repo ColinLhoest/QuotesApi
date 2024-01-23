@@ -1,3 +1,3 @@
-export class BackEndException extends Error {
+export class BackendException extends Error {
     statusCode: number = 500
 }

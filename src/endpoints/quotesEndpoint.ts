@@ -1,6 +1,6 @@
 
 import { Request, Response } from 'express'
-import { BackEndException } from '../exceptions/backEndException'
+import { BackendException } from '../exceptions/backendException'
 
 import router from '../router'
 import { quotesService } from '../services/quotesService'
@@ -17,7 +17,7 @@ router.get('/quotes/:limit?', async (req: Request, res: Response) => {
 
         res.send(quotes)
     } catch (error) {
-        throw new BackEndException('Access Denied')
+        throw new BackendException('Access Denied')
     }
 })
 
