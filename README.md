@@ -28,7 +28,7 @@ Pour installer le projet, suivez ces étapes :
    npm run start
 
 ## Utilisation
-Pour appeler l'API déployée localement, lancez une requête à l'adresse suivante :
+Pour appeler l'API déployée localement, lancez une requête depuis un navigateur internet à l'adresse suivante :
 ```
 http://localhost:3030/api/quotes
 ```
